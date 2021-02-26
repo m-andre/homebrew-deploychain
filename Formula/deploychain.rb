@@ -11,11 +11,11 @@ class Deploychain < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://s3.andre.sk/deploychain/deploychain/0.0.2/deploychain_0.0.2_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "2b3a4949e21d5a469b39c4cbc6488458cad2690d9499286809e78a2b5ec87c96"
+    sha256 "a9436488b2f375c0c80398b229c8f288aeb1d8ed988ee3da38eae72c5169d552"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://s3.andre.sk/deploychain/deploychain/0.0.2/deploychain_0.0.2_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "6d3ba979e8d3f1abbdfad045fa5c518b35f96bfc934a666870898d01d91a07fc"
+    sha256 "b4bd9f2f0895350855d17e49850a2aecfacfce902ab44b969cc2f869ffd8cbdb"
   end
 
   def install
