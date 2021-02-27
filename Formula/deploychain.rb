@@ -20,6 +20,8 @@ class Deploychain < Formula
 
   def install
     bin.install "deploychain"
+    etc.install "configs/deploychain.conf"
+    man1.install "man/deploychain.1.md"
   end
 
   test do
