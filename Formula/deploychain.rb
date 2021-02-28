@@ -10,12 +10,12 @@ class Deploychain < Formula
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://s3.andre.sk/deploychain/deploychain/0.0.3/deploychain_0.0.3_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "c95333e1621ef006b4daa95aabc4714ae8cf084e9ba452087c9ca39bf511af4e"
+    url "https://go-deploychain.s3.eu-central-1.amazonaws.com/deploychain/0.0.3/deploychain_0.0.3_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "14b98d24db48ad37ffc58b1aa6483387eb1da6e1826eed84eabe41b372f19141"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://s3.andre.sk/deploychain/deploychain/0.0.3/deploychain_0.0.3_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "a34561945aebf728eb6050d9cedeeedb2b51a28b9e745ce88392ebfc89ae832c"
+    url "https://go-deploychain.s3.eu-central-1.amazonaws.com/deploychain/0.0.3/deploychain_0.0.3_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "134f255c8f67d90f47382e3b9a46ee65331793a6ec00e1acfeaf43e8533cc013"
   end
 
   def install
