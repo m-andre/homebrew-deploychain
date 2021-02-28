@@ -11,16 +11,16 @@ class Deploychain < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://go-deploychain.s3.eu-central-1.amazonaws.com/deploychain/0.0.3/deploychain_0.0.3_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "14b98d24db48ad37ffc58b1aa6483387eb1da6e1826eed84eabe41b372f19141"
+    sha256 "92eeb3c1ba3115a5cb2ddb670be8db2eac08eb28066c709855f718c3f148b1f2"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://go-deploychain.s3.eu-central-1.amazonaws.com/deploychain/0.0.3/deploychain_0.0.3_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "134f255c8f67d90f47382e3b9a46ee65331793a6ec00e1acfeaf43e8533cc013"
+    sha256 "b4d3c897c376c4bc66750fd5145ccb2e264724d827b5e09a02cd45b5e2673625"
   end
 
   def install
     bin.install "deploychain"
-    man1.install "_output/deploychain.1"
+    man1.install "_output/deploychain.1.gz"
     etc.install "configs/deploychain.conf"
   end
 
