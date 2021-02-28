@@ -5,23 +5,23 @@
 class Deploychain < Formula
   desc "Simple app to demonstrate deployment chain"
   homepage "https://www.andre.sk"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://s3.andre.sk/deploychain/deploychain/0.0.2/deploychain_0.0.2_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "9d53d23599509a5f808645b61043bc57c7500325ca3f01942f3da095962c7cbe"
+    url "https://s3.andre.sk/deploychain/deploychain/0.0.3/deploychain_0.0.3_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "c95333e1621ef006b4daa95aabc4714ae8cf084e9ba452087c9ca39bf511af4e"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://s3.andre.sk/deploychain/deploychain/0.0.2/deploychain_0.0.2_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "3c920d1caf70548358c9de9a411c9333abbc51d37657f576fda950c5c67bb792"
+    url "https://s3.andre.sk/deploychain/deploychain/0.0.3/deploychain_0.0.3_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "a34561945aebf728eb6050d9cedeeedb2b51a28b9e745ce88392ebfc89ae832c"
   end
 
   def install
     bin.install "deploychain"
+    man1.install "_output/deploychain.1"
     etc.install "configs/deploychain.conf"
-    man1.install "man/deploychain.1.md"
   end
 
   test do
