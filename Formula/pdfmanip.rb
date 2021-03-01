@@ -11,11 +11,11 @@ class Pdfmanip < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://go-pdfmanip.s3.amazonaws.com/v0.0.6/pdfmanip_0.0.6_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "63ab644d18830b8fed5a1b9d3371013bc67b8c551f418651e48fb03c1c9a992d"
+    sha256 "aa05fbef41e68515be737060d39363447668616354ef2172f75b44f39d22edcc"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://go-pdfmanip.s3.amazonaws.com/v0.0.6/pdfmanip_0.0.6_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "50b3da294c7367bc5c53979899371c6e1ec0a9d161989ca83402d5e3327eb9d4"
+    sha256 "a1a67b42dac31b2ffedee7a832420c83bedd0239ced890bb424173f565898ce8"
   end
 
   def install
