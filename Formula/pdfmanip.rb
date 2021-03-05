@@ -5,17 +5,17 @@
 class Pdfmanip < Formula
   desc "Tool to manipulate PDF files in archive"
   homepage "https://www.andre.sk"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://go-pdfmanip.s3.amazonaws.com/v0.0.6/pdfmanip_0.0.6_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "aa05fbef41e68515be737060d39363447668616354ef2172f75b44f39d22edcc"
+    url "https://go-pdfmanip.s3.amazonaws.com/v0.0.7/pdfmanip_0.0.7_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "54f8a5e5a7d5443f32f2fda9a63d481b35d77d87a773cfa3c78d7c9d7f423af8"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://go-pdfmanip.s3.amazonaws.com/v0.0.6/pdfmanip_0.0.6_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "a1a67b42dac31b2ffedee7a832420c83bedd0239ced890bb424173f565898ce8"
+    url "https://go-pdfmanip.s3.amazonaws.com/v0.0.7/pdfmanip_0.0.7_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "512ef6438da8fde4befdbd268772ebbe1408162713bdbe0e08487f36b8e6fdcc"
   end
 
   def install
